@@ -1,0 +1,33 @@
+IVI MEDIA SERVICE - AUDIO HAL SIMULATION LOG
+==========================================================================================
+
+19:35:38.153 | IVI UI             | USER_INPUT      | User pressed PLAY button
+19:35:38.153 | Media Service      | COMMAND_RX      | PLAY command received from IVI UI
+19:35:38.153 | Media Service      | PROCESSING      | Preparing selected media track
+19:35:38.153 | Audio Framework    | AUDIO_REQUEST   | Creating audio playback request
+19:35:38.153 | Audio HAL          | HAL_OPEN        | Opening audio output stream
+19:35:38.153 | Audio HAL          | HAL_READY       | Audio output stream initialized
+19:35:38.153 | Audio Driver       | PCM_DATA        | Receiving PCM audio data
+19:35:38.153 | Vehicle Speakers   | PLAYBACK        | Audio output started
+19:35:38.153 | IVI UI             | USER_INPUT      | User pressed PAUSE button
+19:35:38.153 | Media Service      | COMMAND_RX      | PAUSE command received
+19:35:38.153 | Audio Framework    | AUDIO_REQUEST   | Pause request forwarded
+19:35:38.153 | Audio HAL          | HAL_PAUSE       | Pausing audio output stream
+19:35:38.153 | Vehicle Speakers   | PAUSED          | Audio output paused
+19:35:38.153 | IVI UI             | USER_INPUT      | User pressed PLAY/RESUME button
+19:35:38.153 | Media Service      | COMMAND_RX      | RESUME command received
+19:35:38.153 | Audio Framework    | AUDIO_REQUEST   | Resume request forwarded
+19:35:38.153 | Audio HAL          | HAL_RESUME      | Resuming audio output stream
+19:35:38.153 | Audio Driver       | PCM_DATA        | Continuing PCM audio transfer
+19:35:38.153 | Vehicle Speakers   | PLAYBACK        | Audio playback resumed
+19:35:38.153 | IVI UI             | USER_INPUT      | User changed volume to 40%
+19:35:38.153 | Media Service      | COMMAND_RX      | Volume command received: 40%
+19:35:38.153 | Audio Framework    | AUDIO_REQUEST   | Volume request forwarded: 40%
+19:35:38.153 | Audio HAL          | HAL_VOLUME      | Hardware volume configured to 40%
+19:35:38.153 | Vehicle Speakers   | VOLUME_UPDATE   | Audio output volume now 40%
+19:35:38.153 | IVI UI             | USER_INPUT      | User pressed STOP button
+19:35:38.153 | Media Service      | COMMAND_RX      | STOP command received
+19:35:38.153 | Audio Framework    | AUDIO_REQUEST   | Stop request forwarded
+19:35:38.153 | Audio HAL          | HAL_CLOSE       | Closing audio output stream
+19:35:38.153 | Audio Driver       | PCM_STOP        | PCM transfer stopped
+19:35:38.153 | Vehicle Speakers   | STOPPED         | Audio output stopped
